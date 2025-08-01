@@ -1,0 +1,53 @@
+body {
+  background: #f3f6fa;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  color: #222;
+}
+.navbar {
+  font-size: 1.1em;
+}
+h2, .h4 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.card {
+  border-radius: 1em;
+  background: #fff;
+}
+#weather-icon {
+  transition: transform 0.4s;
+}
+#weather-icon.animate {
+  transform: scale(1.1) rotate(-10deg);
+}
+#forecast-cards .card {
+  border-radius: 0.9em;
+  transition: box-shadow 0.4s, background 0.4s;
+}
+#forecast-cards .card:hover {
+  background: #eaf6ff;
+  box-shadow: 0 4px 16px 0 rgba(60,60,60,0.09);
+}
+#forecast-cards .weather-accordion .accordion-button {
+  background: #f7fafc;
+  font-weight: 600;
+}
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  border: 0 !important;
+}
+.alert {
+  font-size: 1em;
+}
+
+@media (max-width: 700px) {
+  #forecast-cards .card { min-width: 160px; }
+  .card-body { flex-direction: column !important; }
+}
